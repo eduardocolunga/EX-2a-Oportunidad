@@ -1,0 +1,13 @@
+function setup(){
+  X = int();
+  Y = int();
+  D = int();
+}
+
+function solution(X,Y,D) {
+  if (X <= Y){
+  let Z = Math.round((Y - X)/D);
+  return Z
+}
+}
+console.log('El conejo llega en', solution(10, 85, 30), 'saltos a su destino')
