@@ -1,0 +1,16 @@
+function setup() {
+  a = int();
+  b = int();
+  c = int();
+  d = int();
+}
+
+function multiplicar(a, b, c, d) {
+ if (a > 0 && b > 0 && c > 0 && d > 0){
+    return a * b * c * d;
+  }
+  else{
+    console.log('Escoge numero diferente a 0')
+  }
+  }
+console.log(multiplicar(2, 3, 3, 4))
