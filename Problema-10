@@ -1,0 +1,14 @@
+function solution(A) {
+  A = A.slice(0).sort(function(a, b) { return a - b; });
+  let sig = 1;
+  let per = [];
+  for (let i = 0; i < A.length; i++) {
+    while (sig < A[i]) {
+      per.push(sig);
+      sig++;
+    }
+    sig++;
+  }
+  return per.slice(-1);
+}
+console.log(solution([2, 3, 1, 5]))
