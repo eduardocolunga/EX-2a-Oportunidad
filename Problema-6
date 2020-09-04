@@ -1,0 +1,9 @@
+let inp, value;
+
+function setup(){
+    n = int();
+}
+function bit(n) {
+  return n * 249972.79; 
+}
+console.log('Valor en MXN:', bit(200))
